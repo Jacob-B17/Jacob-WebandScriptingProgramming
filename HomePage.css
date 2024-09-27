@@ -1,51 +1,108 @@
-@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif; /* Font type */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light grey background */
+}
 
-/* #header {
-    background-color: rgb(200, 217, 237);
-    color: rgb(70, 99, 172);
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    padding:0px;
-    margin:0px;
-    } */
-/* #Home{
-    top: 100;
-    right: 50%;
-    } */
+/*Creates the headers background and text colour*/
+header {
+    background: rgb(200, 217, 237); /* Updated header background */
+    color: rgb(70, 99, 172); /* Updated header text color */
+    padding: 10px; /* Padding around the header */
+}
 
+/*This part is the header where I have the home, about, contact and project links.*/
+/*This allows all of them to be lined up along the header and no longer stack and evenly space them out*/
 #header {
-    display: flex;
+    display: flex; /* Flexbox for layout */
     justify-content: space-around; /* Evenly space the links */
-    padding: 10px; /* Add some padding around the header */
-    background-color: #f8f8f8; /* Change to your preferred background color */
 }
 
+/*I removed the line that apears under the links so that it looks cleaner*/
 #header a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Change to your preferred text color */
-    font-weight: bold; /* Make text bold */
+    text-decoration: none; 
+    color: rgb(70, 99, 172); 
+    font-weight: bold; 
+    padding: 10px; 
 }
 
+/*This will create a little box around the header link when you hover over it*/
 #header a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff; 
 }
 
 .centre {
     text-align: center;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    }
-#banner{
-    background-color: rgb(225, 241, 253);
-    height:120px;
-    margin: auto;
-    }
+    margin: auto; 
+    width: 50%; 
+    padding: 10px; 
+}
+
+/* Banners height margin*/
+#banner {
+    height: 120px; 
+    margin: auto; 
+}
+
+/*Creates title colour and size*/
 #banner h1 {
-    color: rgb(70, 99, 172);
-    
-    }
+    margin: 0; /* Remove default margin */
+    font-size: 40px; /* Large font size */
+    color: rgb(70, 99, 172); /* Banner text color */
+}
+
+/* Creates a flexbox that contains text, photos etc. I also gave it a background colour and rounded corners */
+.profile-container {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    max-width: 800px; 
+    margin: 20px auto;
+    background: #ffffff; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+.profile-image {
+    flex: 0 0 200px; 
+    margin-right: 20px; 
+}
+/*rounds the corners of the image*/
+.profile-image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+
 #right-column {
     float: right;
-    width: 600px;height: 600px;
-    background-color:LightGray;
+    width: 600px; 
+    height: 600px; 
+    background-color: white;
+}
+
+#right-column h3 {
+    margin: 0; 
+    color:  rgb(70, 99, 172); 
+}
+
+/*Designs the footer, creates the background, and also space out the email and copyright*/
+#footer {
+    background: rgb(200, 217, 237); 
+    color: rgb(70, 99, 172);
+    height: auto; 
+    width: 100%; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#footer h5 {
+    margin: 5px; 
+    flex-basis: 100%; 
+    text-align: center; 
 }
