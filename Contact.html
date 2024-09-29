@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <title>Jacob's Profile</title>
     <link rel="stylesheet" type="text/css" href="HomePage.css">
-    <style>
-        /* Additional CSS for layout */
-    </style>
 </head>
 <body>
     <header>
@@ -23,7 +20,37 @@
         </div>
     </div>
     <div class="profile-container">
-        
+        <div id="wrapper"></div>
+            <form action="mailto:jacob.bryan@ontariotechu.net" 
+            method="post" enctype="text/plain" ?subject=Mistakes
+            name="form">
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your Complete Name" size="32" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Your Email Address" size="48" required>
+            </p>
+            <p>
+                <label for="comments">Comments :</label>
+                <br><br>
+                <textarea name="comments"cols="40" rows="8"></textarea>
+                
+            </p>
+            <p>
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" placeholder="Your Phone Number" size="32" required>
+            </p>
+            <p>
+                <input type="submit" value="Click to submit the form"/>
+            </p>
+            <p>
+                <input type="reset" value="Click to reset the form"/>
+            </p>
+            </form>
+            
+        </div>
     </div>
     <footer>
         <div id="footer">

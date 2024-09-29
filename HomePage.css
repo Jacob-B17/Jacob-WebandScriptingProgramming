@@ -1,23 +1,23 @@
 body {
-    font-family: Arial, sans-serif; /* Font type */
-    line-height: 1.6; /* Line height for readability */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    background-color: #f4f4f4; /* Light grey background */
+    font-family: Arial, Helvetica, sans-serif, monospace; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
 }
 
 /*Creates the headers background and text colour*/
 header {
-    background: rgb(200, 217, 237); /* Updated header background */
-    color: rgb(70, 99, 172); /* Updated header text color */
-    padding: 10px; /* Padding around the header */
+    background: rgb(200, 217, 237); 
+    color: rgb(70, 99, 172); 
+    padding: 10px; 
 }
 
 /*This part is the header where I have the home, about, contact and project links.*/
 /*This allows all of them to be lined up along the header and no longer stack and evenly space them out*/
 #header {
-    display: flex; /* Flexbox for layout */
-    justify-content: space-around; /* Evenly space the links */
+    display: flex; 
+    justify-content: space-around; 
 }
 
 /*I removed the line that apears under the links so that it looks cleaner*/
@@ -48,9 +48,9 @@ header {
 
 /*Creates title colour and size*/
 #banner h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 40px; /* Large font size */
-    color: rgb(70, 99, 172); /* Banner text color */
+    margin: 0;
+    font-size: 40px; 
+    color: rgb(70, 99, 172);
 }
 
 /* Creates a flexbox that contains text, photos etc. I also gave it a background colour and rounded corners */
@@ -59,7 +59,7 @@ header {
     align-items: flex-start; 
     justify-content: center; 
     max-width: 800px; 
-    margin: 20px auto;
+    margin: 10px auto;
     background: #ffffff; 
     border-radius: 8px; 
     padding: 20px; 
