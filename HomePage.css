@@ -3,7 +3,7 @@ body {
     line-height: 1.6; 
     margin: 0; 
     padding: 0; 
-    background-color: #f4f4f4; 
+    background-color: #f4f4f4;     
 }
 
 /*Creates the headers background and text colour*/
@@ -41,9 +41,12 @@ header {
 }
 
 /* Banners height margin*/
+/*Uses a gradient matching the header colour and tranistions to white*/
 #banner {
     height: 120px; 
-    margin: auto; 
+    margin: auto;
+    background: linear-gradient(to bottom, rgb(200, 217, 237), white);
+    border-radius: 15px;
 }
 
 /*Creates title colour and size*/
@@ -54,15 +57,17 @@ header {
 }
 
 /* Creates a flexbox that contains text, photos etc. I also gave it a background colour and rounded corners */
+/*Uses a gradient starting as white and tranistions to the footer colour*/
 .profile-container {
     display: flex; 
     align-items: flex-start; 
     justify-content: center; 
     max-width: 800px; 
     margin: 10px auto;
-    background: #ffffff; 
+    background: linear-gradient(to bottom, white, rgb(200, 217, 237));
     border-radius: 8px; 
     padding: 20px; 
+    
 }
 
 .profile-image {
@@ -71,53 +76,60 @@ header {
 }
 /*rounds the corners of the image*/
 .profile-image img {
+    background-color: transparent;
     width: 100%; 
     height: auto; 
     border-radius: 8px; 
 }
 
 /*Creates a flex box used for the project page, here i have it so all the items will stack vertically and centres them*/
+/*Uses a gradient starting as white and tranistions to the footer colour*/
 .project-container {
     display: flex;
     flex-direction: column;
     align-items: center; 
     max-width: 800px; 
     margin: 10px auto; 
-    background: #ffffff; 
+    background: linear-gradient(to bottom, white, rgb(200, 217, 237));
     border-radius: 8px; 
     padding: 20px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for depth */
 }
 
+/*This section is used to centre the image in the flexbox, takes up the whole space so it is big enough to see and spaces it from the text*/
 .network-image {
-    display: flex; /* Use flexbox to center the image */
-    justify-content: center; /* Center the image horizontally */
-    width: 100%; /* Ensure it takes the full width of the container */
-    margin-bottom: 20px; /* Space between image and text */
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
 }
 
+/*This is used to make sure the image does not go past the box*/
 .network-image img {
-    max-width: 100%; /* Image should not exceed the width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Round the corners */
+    max-width: 100%;
+    height: auto; 
 }
 
+/*Centres the text below the image while making sure it takes up the whole width while still having some padding*/
 .description {
-    text-align: center; /* Center text below the image */
-    width: 100%; /* Ensure it takes the full width */
-    padding: 0 20px; /* Add some horizontal padding for text */
+    text-align: center;
+    color: rgb(70, 99, 172); 
+    width: 100%; 
+    padding: 0 20px; 
 }
 
 #right-column {
     float: right;
     width: 600px; 
-    height: 600px; 
-    background-color: white;
+    height: 400px; 
+    background: white; 
+    border-radius: 8px; 
+    padding: 20px; 
 }
 
 #right-column h3 {
     margin: 0; 
-    color:  rgb(70, 99, 172); 
+    color: rgb(70, 99, 172); 
+    text-align: center; 
 }
 
 /*Designs the footer, creates the background, and also space out the email and copyright*/
