@@ -70,6 +70,7 @@ header {
     
 }
 
+/*Contains all my text beside my image in my about me page*/
 #right-column {
     float: right;
     width: 600px; 
@@ -85,6 +86,7 @@ header {
     text-align: center; 
 }
 
+/*Picute of me for my about me page*/
 .profile-image {
     flex: 0 0 200px; 
     margin-right: 20px; 
@@ -142,6 +144,7 @@ header {
     margin-bottom: 20px; 
 }
 
+/*Second image on my projects page*/
 .network-image_2 {
     display: flex; 
     justify-content: center; 
@@ -171,6 +174,40 @@ header {
 .description_2 section {
     margin-bottom: 20px; 
 }
+
+/*Creates the flexbox for my home page*/
+.intro-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 800px; 
+    margin: 10px auto;
+    background: linear-gradient(to bottom, white, rgb(200, 217, 237));
+    border-radius: 8px; 
+    padding: 20px; 
+    flex-grow: 1; 
+}
+
+/*Image for my home page*/
+.logo-image img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+
+}
+
+/*Text for my home page*/
+.intro_description {
+    text-align: center;
+    color: rgb(70, 99, 172); 
+    width: 90%; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 8px; 
+}
+
 
 /*Designs the footer, creates the background, and also space out the email and copyright*/
 #footer {
