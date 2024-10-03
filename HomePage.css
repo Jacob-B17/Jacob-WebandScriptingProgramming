@@ -70,10 +70,26 @@ header {
     
 }
 
+#right-column {
+    float: right;
+    width: 600px; 
+    height: 700px; 
+    background: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+#right-column h3 {
+    margin: 0; 
+    color: rgb(70, 99, 172); 
+    text-align: center; 
+}
+
 .profile-image {
     flex: 0 0 200px; 
     margin-right: 20px; 
 }
+
 /*rounds the corners of the image*/
 .profile-image img {
     background-color: transparent;
@@ -115,21 +131,45 @@ header {
     color: rgb(70, 99, 172); 
     width: 100%; 
     padding: 0 20px; 
-}
-
-#right-column {
-    float: right;
-    width: 600px; 
-    height: 400px; 
+    width: 700px; 
+    height: 175px; 
     background: white; 
     border-radius: 8px; 
     padding: 20px; 
 }
+/*Creates space between the two sections in my description for better readability */
+.description section {
+    margin-bottom: 20px; 
+}
 
-#right-column h3 {
-    margin: 0; 
+.network-image_2 {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
+
+/*This is used to make sure the image does not go past the box*/
+.network-image_2 img {
+    max-width: 100%;
+    height: auto; 
+}
+/*Centres the text below the image while making sure it takes up the whole width while still having some padding*/
+.description_2 {
+    text-align: center;
     color: rgb(70, 99, 172); 
-    text-align: center; 
+    width: 100%; 
+    padding: 0 20px; 
+    width: auto; 
+    height: 250px; 
+    background: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+/*Creates space between the two sections in my description for better readability */
+.description_2 section {
+    margin-bottom: 20px; 
 }
 
 /*Designs the footer, creates the background, and also space out the email and copyright*/
