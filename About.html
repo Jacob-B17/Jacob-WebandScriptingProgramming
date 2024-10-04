@@ -26,7 +26,42 @@
         <div id="right-column">
             <h3>My name is Jacob. I am a second year student at Ontario Tech University. I am in the IT Networking and Information Security program. </h3>
         </div>
+        <div id="intro-vid">
+            <video width="360" height="220" controls poster="aboutposter.png" preload="auto" muted id="myvid">
+                <source src="aboutvid.mp4" type="video/mp4">
+                <source src="aboutvid.ogv" type="video/ogg">
+            </video>
+            <br>
+            <button onclick="PlayPause()">Play/Pause Video</button>
+            <script>
+                var mybtn=document.getElementById("myvid");
+                function PlayPause()
+                {
+                    if(mybtn.paused)
+                        mybtn.play();
+                    else
+                        mybtn.pause();
+                }
+            </script>
+            <style>
+                button{
+                    background-color: white;
+                    color: rgb(70, 99, 172);
+                    height: 50px;
+                    border: 2px whitesmoke;
+                    border-radius: 5px;
+                }
+                button:hover
+                {
+                    background-color: rgb(70, 99, 172);
+                    color: white;
+                    border: 2px whitesmoke;
+                    border-radius: 5px;
+                }
+            </style>
+        </div>
     </div>
+
     <footer>
         <address id="footer">
             <h5>© 2024 by Jacob Bryan</h5>

@@ -61,45 +61,43 @@ header {
 .profile-container {
     display: flex; 
     align-items: flex-start; 
-    justify-content: center; 
+    flex-wrap: wrap; 
     max-width: 800px; 
     margin: 10px auto;
     background: linear-gradient(to bottom, white, rgb(200, 217, 237));
     border-radius: 8px; 
     padding: 20px; 
-    
 }
 
-/*Contains all my text beside my image in my about me page*/
-#right-column {
-    float: right;
-    width: 600px; 
-    height: 700px; 
-    background: white; 
-    border-radius: 8px; 
-    padding: 20px; 
-}
-
-#right-column h3 {
-    margin: 0; 
-    color: rgb(70, 99, 172); 
-    text-align: center; 
-}
-
-/*Picute of me for my about me page*/
+/*Sets the width for the photo*/
 .profile-image {
     flex: 0 0 200px; 
     margin-right: 20px; 
 }
 
-/*rounds the corners of the image*/
 .profile-image img {
-    background-color: transparent;
     width: 100%; 
     height: auto; 
     border-radius: 8px; 
 }
 
+/*Creates the flexbox for the text on the right side*/
+#right-column {
+    flex: 1; 
+    background: white; 
+    color: rgb(70, 99, 172);
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+/*Centres the vid to the middle of the flexbox*/
+#intro-vid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    margin: 10px; 
+}
 /*Creates a flex box used for the project page, here i have it so all the items will stack vertically and centres them*/
 /*Uses a gradient starting as white and tranistions to the footer colour*/
 .project-container {
@@ -195,7 +193,6 @@ header {
     height: auto; 
     border-radius: 8px; 
     margin-bottom: 20px; 
-
 }
 
 /*Text for my home page*/
@@ -226,4 +223,3 @@ header {
     flex-basis: 100%; 
     text-align: center; 
 }
-
